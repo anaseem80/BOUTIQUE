@@ -195,7 +195,7 @@
         </div>
 
         <div>
-            <p class="text-center mt-2">{{__('Copyright reserved to Nano Technology Solutions')}} &copy;</p> 
+            <p class="text-center mt-2">{{__('Copyright NTS')}} &copy;</p> 
         </div>
     </div>
 </footer>
