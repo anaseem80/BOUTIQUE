@@ -180,16 +180,22 @@
                         <img src="{{asset('storage/users/logo.png' )}}" alt="">
                     </div>
                     <div class="col-lg-4 text-md-center text-sm-center text-lg-end text-center">
-                        <a href="{{route('about')}}" class="who-us text-decoration-none">من نحن</a>
-                        <p class="text-dark fs-4">  شركة 
-                            <br> A ELLE BOUTIQUE </p>
+                        <a href="{{route('about')}}" class="who-us text-decoration-none">{{__('About Us')}}</a>
+                        <p class="text-dark fs-4">  {{__('Welcome To')}}  </p>
+                        <p class="text-dark" dir="rtl">  
+
+                        <span class="fw-bold mb-2 d-block"> {{__('Shop Laha .. À ELLE BOUTIQUE')}} </span>
+                        {{__('Our boutique is a diverse Emirati brand.. We specialize in designing various dresses, abayas, etc.. We also provide bags and shoes that suit all different occasions, and we strive to provide everything that is new and distinguished. needs..')}}
+                        <span class="fw-bold mt-2 d-block">{{__('We seek to serve you with love.. 🤍')}}
+                        </span>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div>
-            <p class="text-center mt-2">Copyright &copy; NTS</p>
+            <p class="text-center mt-2">{{__('Copyright reserved to Nano Technology Solutions')}} &copy;</p> 
         </div>
     </div>
 </footer>

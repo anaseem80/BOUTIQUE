@@ -460,6 +460,17 @@ footer .foot  ul li a:hover{
     .customm{
       order: 1;
     }
+    .header-top-settings a{
+      font-size: 10px !important;
+    }
+    .header-top-settings ul li .dropdown-list{
+      top: -58px !important;
+    }
+    .header-top-settings ul li .dropdown-list:after{
+      bottom: -12px !important;
+      top: unset !important;
+      border-color: #fff transparent transparent transparent !important;
+    }
 }
 /****************************************************  end footer  **********************************************************/
 /*----- mobile menu start -----*/
@@ -1688,8 +1699,17 @@ body {
   .header-top-settings ul li:first-child:before {
     display: none;
   }
+  .header-top-settings ul li .dropdown-list:after{
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 3px;
+    border-style: solid;
+    border-color: transparent transparent #fff  transparent;
+    border-width: 7px;
+  }
   .header-top-settings ul li .dropdown-list {
-    top: 100%;
+    top: 50px;
     right: 0;
     position: absolute;
     opacity: 0;
@@ -1700,9 +1720,10 @@ body {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    padding: 15px 15px 20px;
-    width: 150px;
-    z-index: 9;
+    line-height: 30px;
+    padding: 0;
+    width: 80px;
+    z-index: 20;
     text-align: left;
     background-color: #fff;
     pointer-events: none;
@@ -1710,7 +1731,10 @@ body {
   }
   .header-top-settings ul li .dropdown-list li {
     margin-left: 0;
-    padding: 0;
+    padding: 3px;
+  }
+  .header-top-settings ul li .dropdown-list li:nth-child(1){
+    border-bottom: 1px solid #00000010;
   }
   .header-top-settings ul li .dropdown-list li a {
     color: #555555;

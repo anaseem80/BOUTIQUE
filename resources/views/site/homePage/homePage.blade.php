@@ -45,7 +45,7 @@
     </div>
 </section> -->
 <div class="hero text-center rounded m-1" style="background-image:url({{asset('storage/property/'.$carousel->image)}});">
-    <h1 class="mb-5">تسوق الان لتحصل علي عروض كبيرة</h1>
+    <h1 class="mb-5">{{__('Shop now on great offers')}}</h1> 
     <a href="{{route('products')}}" class="text-decoration-none">{{__('Shop now')}}</a>
 </div>
 
@@ -191,8 +191,7 @@
 
 <section class="much-seller">
     <div class="container">
-        <h1>الأفضل مبيعا</h1>
-
+        <h1>{{__('Best Selling')}}</h1>
         <div class="row mx-0 images">
             <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
                 <img src="{{asset('assets/img/2pcs Kangaroo Pocket Thermal Hoodie.jpeg')}}" alt="">
